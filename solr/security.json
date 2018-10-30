@@ -1,0 +1,17 @@
+{
+    "authentication": {
+        "class": "solr.HadoopAuthPlugin",
+        "sysPropPrefix": "solr.",
+        "type": "ldap",
+        "authConfigs": [
+            "ldap.providerurl",
+            "ldap.basedn",
+            "ldap.enablestarttls"
+        ],
+        "defaultConfigs": {
+            "ldap.providerurl": "ldap://ldap",
+            "ldap.basedn": "dc=example,dc=org",
+            "ldap.enablestarttls": "false"
+        }
+    }
+}
